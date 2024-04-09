@@ -1,0 +1,102 @@
+/* Reset des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles de base */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 999;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-menu li {
+    margin-right: 20px;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .search-bar {
+    padding: 5px;
+  }
+  
+  .carousel {
+    /* Styles pour le conteneur du carrousel */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-content {
+    /* Styles pour le contenu du carrousel */
+    display: flex;
+  }
+  
+  .carousel-item {
+    /* Styles pour chaque élément du carrousel */
+    flex: 0 0 auto;
+    width: 100%; /* Assure que chaque élément prend toute la largeur */
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Styles pour les boutons de navigation */
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  .footer {
+    /* Styles pour le footer */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  
