@@ -66,32 +66,50 @@
   }
   
   .vertical-scrolling-bg {
-    /* Styles pour le contenu de l'image de fond qui défile verticalement */
-    background-image: url('your-background-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Taille de l'image de fond */
+    height: 100vh;
     overflow-y: auto;
+    position: relative;
+    color: #fff;
   }
   
-  .horizontal-scrolling-logos {
-    /* Styles pour le contenu des logos qui défilent horizontalement */
-    white-space: nowrap;
-    overflow-x: auto;
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left; /* Alignement du texte à gauche */
   }
   
+  .association-info {
+    margin-right: 20px; /* Espace entre le texte et le logo */
+  }
+  
+  .logo-container {
+    display: inline-block;
+    text-align: right; /* Alignement du logo à droite */
+  }
+  
+  .logo-container img {
+    width: 100px; /* Ajustez la taille du logo selon vos besoins */
+    border-radius: 50%;
+  }
+  
+  
+  /* Styles pour les boutons de navigation ronds */
   .round-button {
-    /* Styles pour les boutons de navigation ronds */
     position: absolute;
     bottom: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    z-index: 999; /* Assure que les boutons sont au-dessus du contenu */
   }
   
   .prev-button {
@@ -103,6 +121,7 @@
     right: 50%;
     transform: translateX(75%);
   }
+  
   
   .footer {
     /* Styles pour le footer */
