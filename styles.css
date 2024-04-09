@@ -21,17 +21,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color:transparent;
     color: #fff;
     padding: 10px 0;
     z-index: 999;
   }
   
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
+ 
   .navbar-menu {
     list-style: none;
     display: flex;
@@ -66,29 +62,46 @@
     /* Styles pour chaque élément du carrousel */
     flex: 0 0 auto;
     width: 100%; /* Assure que chaque élément prend toute la largeur */
-    padding: 20px;
-    background-color: #f0f0f0;
+    position: relative;
   }
   
-  /* Styles pour les boutons de navigation */
-  .prev-button,
-  .next-button {
+  .vertical-scrolling-bg {
+    /* Styles pour le contenu de l'image de fond qui défile verticalement */
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Taille de l'image de fond */
+    overflow-y: auto;
+  }
+  
+  .horizontal-scrolling-logos {
+    /* Styles pour le contenu des logos qui défilent horizontalement */
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  
+  .round-button {
+    /* Styles pour les boutons de navigation ronds */
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #333;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    font-size: 20px;
     cursor: pointer;
   }
   
   .prev-button {
-    left: 10px;
+    left: 50%;
+    transform: translateX(-75%);
   }
   
   .next-button {
-    right: 10px;
+    right: 50%;
+    transform: translateX(75%);
   }
   
   .footer {
